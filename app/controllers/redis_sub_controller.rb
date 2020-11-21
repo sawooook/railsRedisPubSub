@@ -1,0 +1,2 @@
+class RedisSubController < ApplicationController
+end
