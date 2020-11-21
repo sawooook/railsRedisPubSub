@@ -1,0 +1,3 @@
+class RedisPub < ApplicationRecord
+
+end

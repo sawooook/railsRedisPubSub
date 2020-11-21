@@ -1,0 +1,3 @@
+class RedisSub < ApplicationRecord
+
+end

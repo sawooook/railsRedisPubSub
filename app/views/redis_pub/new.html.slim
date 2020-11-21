@@ -1,0 +1,8 @@
+h2 PUBLISH REDIS
+= form_with(url: redis_pub_index_path, local: true, method: :post) do |form|
+  .form-group
+    = form.text_field :message, required: true, class: "form-control", placeholder: "Please enter a message"
+    br
+    br
+  .actions
+    = form.submit "SEND", class: "btn btn-primary"
