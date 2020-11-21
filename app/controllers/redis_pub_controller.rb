@@ -4,7 +4,6 @@ class RedisPubController < ApplicationController
 
   def create
     puts redis_params
-    puts "create Success"
     @redis.publish("redis", redis_params[:message])
   end
 
@@ -16,7 +15,6 @@ class RedisPubController < ApplicationController
   end
 
   private
-
   def redis_params
     params.permit(:message)
   end
